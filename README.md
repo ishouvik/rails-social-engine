@@ -10,6 +10,7 @@ NOT YET READY FOR DEPLOYMENT YET
 - Devise
 - Cancan
 - Simple Form
+- Carrierwave
 - Bootstrap
 
 ## Installation
