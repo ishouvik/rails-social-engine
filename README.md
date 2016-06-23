@@ -11,6 +11,7 @@ NOT YET READY FOR DEPLOYMENT YET
 - Cancan
 - Simple Form
 - Carrierwave
+- MiniMagick
 - Bootstrap
 
 ## Installation
