@@ -1,0 +1,22 @@
+<%= content_for :title, 'Profile' %>
+
+<div class="well">
+  <div class="row">
+    <div class="col-md-2">
+      <p><%= image_tag 'placeholder.png', class: 'img-thumbnail' %></p>
+    </div>
+
+    <div class="col-md-10">
+      <h2><%= @user.name %></h2>
+      <p><%= link_to @user.email, "mailto:#{@user.email}" %></p>
+
+      <p>
+        <%= simple_format(@user.description) %>
+      </p>
+
+      <p class="text-right">
+        <%= link_to t('site.edit'), main_app.edit_user_registration_path, class: 'btn btn-link' %>
+      </p>
+    </div>
+  </div>
+</div>

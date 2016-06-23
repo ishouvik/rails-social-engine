@@ -1,0 +1,19 @@
+<%= content_for :title, 'User Profiles' %>
+
+<table class="table table-striped">
+  <tobdy>
+    <% @users.each do |user| %>
+      <tr>
+        <td width="10%">
+          <p><%= link_to image_tag('placeholder.png', class: 'img-thumbnail'), profile_path(user) %></p>
+        </td>
+        <td>
+          <h4><%= link_to user.name, profile_path(user) %></h4>
+          <p><%= link_to user.email, "mailto:#{user.email}" %></p>
+        </td>
+      </tr>
+    <% end %>
+  </tobdy>
+</table>
+
+<div id="pagination"><%= paginate @users %></div>
