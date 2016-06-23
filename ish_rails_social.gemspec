@@ -26,4 +26,5 @@ Gem::Specification.new do |s|
   s.add_dependency "bootstrap-sass"
   s.add_dependency "carrierwave"
   s.add_dependency "carrierwave-mongoid"
+  s.add_dependency "mini_magick"
 end
