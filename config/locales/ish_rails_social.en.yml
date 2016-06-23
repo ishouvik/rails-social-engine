@@ -1,4 +1,5 @@
 en:
   ish_rails_social:
     profiles:
+      index: 'User profiles'
       my: 'My profile'

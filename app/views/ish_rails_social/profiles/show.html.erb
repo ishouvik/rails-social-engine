@@ -1,9 +1,13 @@
-<%= content_for :title, 'Profile' %>
+<%= content_for :title, t('ish_rails_social.profiles.index') %>
 
 <div class="well">
   <div class="row">
     <div class="col-md-2">
-      <p><%= image_tag 'placeholder.png', class: 'img-thumbnail' %></p>
+      <% unless @user.avatar.nil? %>
+        <p><%= image_tag @user.avatar.url, class: 'img-thumbnail' %></p>
+      <% else %>
+        <p><%= image_tag 'placeholder.png', class: 'img-thumbnail' %></p>
+      <% end %>
     </div>
 
     <div class="col-md-10">

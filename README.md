@@ -16,3 +16,7 @@ NOT YET READY FOR DEPLOYMENT YET
 - Clone this git repo.
 - Add this engine to your Gemfile. `gem 'ish_rails_social', path: 'path/to/the/engine'`
 - Mount the engine on your routes file -- `mount IshRailsSocial::Engine => "/social"`
+
+
+## Devise config
+- Expects the User model to have the following inputs -- `name` and `avatar`

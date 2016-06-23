@@ -5,7 +5,11 @@
     <% @users.each do |user| %>
       <tr>
         <td width="10%">
-          <p><%= link_to image_tag('placeholder.png', class: 'img-thumbnail'), profile_path(user) %></p>
+          <% unless user.avatar.nil? %>
+            <p><%= link_to image_tag(user.avatar.url, class: 'img-thumbnail'), profile_path(user) %></p>
+          <% else %>
+            <p><%= link_to image_tag('placeholder.png', class: 'img-thumbnail'), profile_path(user) %></p>
+          <% end %>
         </td>
         <td>
           <h4><%= link_to user.name, profile_path(user) %></h4>
