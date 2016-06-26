@@ -13,6 +13,7 @@ NOT YET READY FOR DEPLOYMENT YET
 - Carrierwave
 - MiniMagick
 - Bootstrap
+- PublicActivity
 
 ## Installation
 - Clone this git repo.

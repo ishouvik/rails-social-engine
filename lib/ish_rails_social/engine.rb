@@ -4,6 +4,7 @@ module IshRailsSocial
   require 'simple_form'
   require 'kaminari'
   require 'carrierwave/mongoid'
+  require 'public_activity'
 
   class Engine < ::Rails::Engine
     isolate_namespace IshRailsSocial

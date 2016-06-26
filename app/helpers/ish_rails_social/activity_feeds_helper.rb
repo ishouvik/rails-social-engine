@@ -1,4 +1,4 @@
 module IshRailsSocial
-  module StaticPagesHelper
+  module ActivityFeedsHelper
   end
 end

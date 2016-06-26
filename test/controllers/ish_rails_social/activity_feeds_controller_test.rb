@@ -1,13 +1,13 @@
 require 'test_helper'
 
 module IshRailsSocial
-  class StaticPagesControllerTest < ActionController::TestCase
+  class ActivityFeedsControllerTest < ActionController::TestCase
     setup do
       @routes = Engine.routes
     end
 
-    test "should get home" do
-      get :home
+    test "should get index" do
+      get :index
       assert_response :success
     end
 
