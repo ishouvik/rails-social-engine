@@ -1,0 +1,14 @@
+<div class="activity-feed-item">
+  <div class="row">
+    <div class="col-md-10">
+      <%= yield %>
+    </div> <!-- /.col-md-10 -->
+
+    <div class="col-md-2 text-right">
+      <p class="text-muted">
+        <%= time_ago_in_words activity.created_at %> ago
+        <span class="glyphicon glyphicon-time"></span>
+      </p>
+    </div> <!--  /.col-md-2 .text-right -->
+  </div> <!--  /.row -->
+</div> <!--  /.activity-feed-item -->

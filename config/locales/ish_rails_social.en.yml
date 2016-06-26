@@ -1,5 +1,7 @@
 en:
   ish_rails_social:
+    activity_feeds:
+      index: 'Activity feed'
     profiles:
       index: 'User profiles'
       my: 'My profile'

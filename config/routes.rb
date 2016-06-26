@@ -5,6 +5,6 @@ IshRailsSocial::Engine.routes.draw do
     get ':id', to: 'profiles#show', as: :profile
   end
 
-  get 'static_pages/home'
-  root 'static_pages#home'
+  get  'activity_feeds/index'
+  root 'activity_feeds#index'
 end

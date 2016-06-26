@@ -1,0 +1,5 @@
+<%= content_for :title, t('ish_rails_social.activity_feeds.index') %>
+
+<%= render_activities @activities, layout: :activity  %>
+
+<div id="pagination"><%= paginate @activities %></div>
